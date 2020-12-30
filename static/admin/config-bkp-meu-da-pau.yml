@@ -1,0 +1,38 @@
+#esse é quem gerencia os arquivos em markdown
+#esse arquivo .yml esta ligado ao netlify-cms
+
+#backend do meu site
+#quem vai manter
+#onde executara
+#qual o repositorio dento de onde vai manter
+backend:
+    name: github
+    branch: master
+    repo: jaieme/0003-blog-md
+
+#media - qdo sobe uma imagem
+#public - qdo faz um build do site
+media_folder: static/img
+public_folder: /img
+
+#organizar dados - collections
+##OBS da pau de netlify can upload photo
+##para resolver precisa habilitar o 
+##git-gateway dentro do site do netlify (e la logar 
+##      com a senha do github) e dentro a secao sites
+##      identity...ali encontra. Sem isso nao vai fotos!!
+## alem do acima ainda tem mais coisa, pq nao funcionou
+## ainda.
+##https://www.freecodecamp.org/news/how-to-build-a-blog-with-gatsby-and-netlify-cms/
+##
+
+collections:
+  - name: 'author' #esse campo aparece na url /collections/author
+    label: 'Autores' # esse nome aparece nuns botoes, dentro do ambiente Netlify
+    folder: 'src/authors'
+    create: true
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
+    fields:
+        - { label: 'Nome', name: 'title', widget: 'string' }
+        - { label: 'Avatar', name: 'avatar', widget: 'image' }
