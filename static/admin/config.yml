@@ -53,4 +53,40 @@ collections:
     fields:
         - { label: 'Nome', name: 'title', widget: 'string' }
         - { label: 'Avatar', name: 'avatar', widget: 'image' }
-        - { label: 'Bio', name: 'body', widget: 'markdown' } 
+        - { label: 'Bio', name: 'body', widget: 'markdown' }
+
+
+## a partir daqui para baixo foi tudo colocado pensando
+## nos files markdown feitos por mim e nas pastas dentro de
+## /scr/components/..
+## eis que ele abriu outra collections e usou como referencia
+## o cabeçalho dos arquivos md e as informações deles, cujas
+## quais se repetem em todos ou na maioria.
+## exemplo abaixo:
+##  path: '/blog/minha-pagina'
+##  title: 'FOTO - Minha página - info do campo title do Arquivo .MD'
+##  description: 'info no campo description do Arquivo .MD'
+##  categories: 'categoria'
+##  price: 10
+##  banner: './img1.jpg'
+
+  - name: 'blog'
+    label: 'Blog Post'
+    folder: 'src/content'
+    create: true
+    slug: '{{slug}}'
+    path: '{{slug}}/index'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Descrição', name: 'description', widget: 'string' }
+      #- { label: 'Categoria', name: 'categories', widget: 'string' }
+      #- { label: 'Preço', name: 'price', widget: 'float' }
+      - { label: 'Banner', name: 'banner', widget: 'image' }
+
+
+
+
+
+
+
+
