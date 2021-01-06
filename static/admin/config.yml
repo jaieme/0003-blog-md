@@ -52,6 +52,7 @@ collections:
     path: '{{slug}}/index'
     fields:
         - { label: 'Nome', name: 'title', widget: 'string' }
+        - { label: 'Path', name: 'path', widget: 'string' }
         - { label: 'Avatar', name: 'avatar', widget: 'image' }
         - { label: 'Bio', name: 'body', widget: 'markdown' }
 
