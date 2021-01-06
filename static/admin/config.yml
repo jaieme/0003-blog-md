@@ -80,6 +80,7 @@ collections:
     fields:
       - { label: 'Título', name: 'title', widget: 'string' }
       - { label: 'Descrição', name: 'description', widget: 'string' }
+      - { label: 'Path', name: 'path', widget: 'string' }
       #- { label: 'Categoria', name: 'categories', widget: 'string' }
       #- { label: 'Preço', name: 'price', widget: 'float' }
       - { label: 'Banner', name: 'banner', widget: 'image' }
