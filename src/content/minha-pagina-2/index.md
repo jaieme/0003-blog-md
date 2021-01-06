@@ -1,5 +1,5 @@
 ---
-path: /blog/minha-pagina2
+path: '/blog/minha-pagina2'
 title: 2Minha página - info do campo title do Arquivo .MD teste
 description: 2info no campo description do Arquivo .MD
 categories: categoria

@@ -1,5 +1,5 @@
 ---
-path: /blog/minha-pagina
+path: '/blog/minha-pagina'
 title: FOTO - Minha página - info do campo title do Arquivo .MD
 description: info no campo description do Arquivo .MD
 categories: categoria
